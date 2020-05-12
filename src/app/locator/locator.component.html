@@ -1,0 +1,19 @@
+<div class="locator">
+  <h1>Go to position</h1>
+  <form (submit)="onLocate(postForm)" #postForm="ngForm">
+    <div>
+      <mat-form-field>
+        <mat-label>Latitude:</mat-label>
+        <input matInput ngModel type="number" name="lat" />
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field>
+        <mat-label>Longitude:</mat-label>
+        <input matInput ngModel type="number" name="lng" />
+      </mat-form-field>
+    </div>
+    <button mat-raised-button color="primary" type="submit"> Locate </button>
+  </form>
+</div>
+
